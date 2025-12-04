@@ -1,0 +1,32 @@
+Learned how typescript works internally
+
+      TypeScript code (.ts)
+                  |
+                  |  Type checking + Parsing + Conversion
+                  V
+       JavaScript code (.js)
+                  |
+                  V
+       Browser or Node.js executes
+
+WHAT TYPESCRIPT ACTUALLY DOES
+
+| Task           | Description                                     |
+| -------------- | ----------------------------------------------- |
+| Type Checking  | Ensures variables & functions use correct types |
+| Compilation    | Converts TypeScript → JavaScript                |
+| Removes Types  | No type is present in runtime JS                |
+| Reports Errors | Helps developer catch issues early              |
+| Uses Config    | Controlled through `tsconfig.json`              |
+
+SOME OF THE KEY CONCEPTS
+| Concept                         | Description                          |
+| ------------------------------- | ------------------------------------ |
+| Static Type Checking            | Before running code, errors appear   |
+| Transpilation                   | Converting TypeScript → JS           |
+| Erasing Types                   | Types disappear after compilation    |
+| Compile Errors ≠ Runtime Errors | Compilation happens before execution |
+
+
+TypeScript only adds compile-time support, not runtime behavior.
+It is not executed, not interpreted, not loaded by browsers.
