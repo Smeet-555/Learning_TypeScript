@@ -1,0 +1,28 @@
+Type Annotations & Type Inference in TypeScript
+
+What are Type Annotations?
+  Type Annotation means explicitly telling TypeScript what type a variable, function parameter, or return type should have.
+
+Syntax: 
+  let variableName: type = value;
+
+
+Why use Type Annotations?
+  | Without Annotation | With Annotation          |
+  | ------------------ | ------------------------ |
+  | Error-prone        | Safe & predictable       |
+  | Misuse possible    | Prevents wrong usage     |
+  | Large apps harder  | Contract between modules |
+
+  
+What is Type Inference?
+  Type inference means TypeScript automatically detects types based on the assigned value.
+  So you don’t need to annotate every time.
+
+Example:
+  let city = "Mumbai"; // inferred as string
+  let count = 10;      // inferred as number  
+  city = 123; // ❌ Error: number is not assignable to type string
+
+
+
