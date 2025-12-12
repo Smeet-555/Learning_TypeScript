@@ -21,12 +21,12 @@ console.log(u1.name); // Output: Smeet
 // Interfaces describe the shape of an object or class structure.
 // Used heavily in TypeScript & OOP patterns.
 
-interface User {
+interface Users {
   id: number;
   name: string;
 }
 
-const u2: User = {
+const u2: Users = {
   id: 2,
   name: "Akshay"
 };
